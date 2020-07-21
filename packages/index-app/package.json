@@ -2,6 +2,7 @@
   "name": "index-app",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
   "main": "src/index.hbs",
   "devDependencies": {
     "@types/node": "^14.0.27",

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microfrontend Playground</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
+    <script src="./index.js"></script>
+</head>
+<body>
+<base href="/">
+<a href="/angular">Angular App</a> | <a href="/react">React</a> | <a href="/welcome">External Welcome Page</a>
+<main></main>
+<script>
+    System.import('@org/root-config');
+</script>
+<import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+</body>
+</html>
